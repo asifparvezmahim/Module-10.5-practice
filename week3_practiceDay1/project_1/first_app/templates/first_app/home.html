@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Hi Everyone !!! I'm Asif Parvez Mahim , A Student of PHITRON Batch-3
+    </h1>
+    <h2>Student ID : {{Student_ID}}</h2>
+    <h2>Student Name : {{Student_Name}}</h2>
+    <h2>Available Course : {{Available_Courses}}</h2>
+
+    <h2>FILTERING of DJANGO</h2>
+    <h3>Length of Available Course List : {{ Available_Courses | length }}</h3>
+    <h3>Use of Add : {{ Student_ID | add:"6" }}</h3>
+    <h3>Use of Addslashes : {{ "I'm Asif" | addslashes }}</h3>
+    <h3>Use of capfirst : {{ "phitron" | capfirst }}</h3>
+    <h3>Use of center : {{ "Software" | center:"15" }}</h3>
+    <h3>Use of cut : {{ "Software Development Course" | cut:" " }}</h3>
+    <h3>Use of date : {{ birthday | date:"D d M Y" }}</h3>
+    <h3>Use of default : {{ "Asif Parvez" | default:"nothing" }}</h3>
+    <h3>Uses of dictsort : {{ dict_of_friends | dictsort:"name" }}</h3>
+    <h3>Uses of divisibility :{{ 21 | divisibleby:"3" }}</h3>
+    <h3>Uses of escape : {{ "Hello" | escape }}</h3>
+    <h3>Uses of filesizeformat : {{ 123456789 | filesizeformat }}</h3>
+    <h3>Uses of first : {{ Available_Courses | first }}</h3>
+    <h3>Uses of join : {{ Available_Courses | join:" , " }}</h3>
+    <h3>Uses of last : {{ Available_Courses | last}}</h3>
+    <h3>Uses of length : {{ Available_Courses | length}}</h3>
+    <h3>Uses of linenumbers : {{ "HI" | linenumbers}}</h3>
+    <h3>Uses of lower : {{ "ASIF" | lower}}</h3>
+    <h3>Uses of make_list : {{ "ASIF" | make_list}}</h3>
+    <h3>Uses of random : {{ Available_Courses | random}}</h3>
+    <h3>Uses of slice : {{ Available_Courses | slice:":2"}}</h3>
+    <h3>Uses of slugify : {{ "I am Asif" | slugify }}</h3>
+    <h3>Uses of title : {{ "I am Asif" | title }}</h3>
+    <h3>Uses of title : {{ var | unordered_list }}</h3>
+    <h3>Uses of upper : {{ "asif" | upper }}</h3>
+    <h3>Uses of wordcount : {{ "I am a Student of Phitron" | wordcount }}</h3>
+    <h3>Uses of capfirst : {{'christmas' | capfirst}}</h3>
+    <h3>Uses of truncatechars: {{'Happy coding' | truncatechars:6}}</h3>
+    <h3>Uses of truncatewords: {{"Better days ahead!" | truncatewords:2}}</h3>
+  </body>
+</html>
